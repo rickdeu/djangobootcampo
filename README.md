@@ -3,4 +3,4 @@
 djangobootcamp
 # djangobootcamponline
 # djangobootcamponline
-# djangobootcampo
+# djangobootcamp
