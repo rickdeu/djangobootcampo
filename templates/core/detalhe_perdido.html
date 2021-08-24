@@ -1,0 +1,53 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block main_content %}
+
+
+
+	<!-- white bg -->
+	<section class="tm-white-bg section-padding-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>
+					<div class="col-lg-4 col-md-6 col-sm-6"><h2 class="tm-section-title">{{perdido.tipo_item}}</h2></div>
+					<div class="col-lg-4 col-md-3 col-sm-3"><hr></div>	
+				</div>				
+			</div>
+			<div class="row">
+				<!-- Testimonial -->
+				<div class="col-lg-12">
+					<div class="tm-what-we-do-right">
+						<div class="tm-about-box-2 margin-bottom-30">
+							<img src="{{perdido.photo1.url}}" alt="image" class="tm-about-box-2-img">
+							<div class="tm-about-box-2-text">
+								<h3 class="tm-about-box-2-title">{{perdido}}</h3>
+				                <p class="tm-about-box-2-description gray-text">{{perdido.descricao}}</p>
+				                <p class="tm-about-box-2-footer">{{perdido.data_perdido}}</p>	
+							</div>		                
+						</div>
+				
+					</div>
+					<div class="tm-testimonials-box">
+						<h3 class="tm-testimonials-title">Testimonials</h3>
+						<div class="tm-testimonials-content">
+							<div class="tm-testimonial">
+								<p>"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum."</p>
+		                		<strong class="text-uppercase">John Smith</strong>	
+							</div>
+							<div class="tm-testimonial">
+								<p>"Nisi elit consequat ipsum, nec sagittis sem nibh id elit duis sed odio sit amet nibh."</p>
+			                	<strong class="text-uppercase">Lorens</strong>		
+							</div>
+	       					<div class="tm-testimonial">
+	       						<p>"Rulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio."<p>
+	                			<strong class="text-uppercase">Robert</strong>
+	       					</div>                	
+						</div>
+					</div>	
+				</div>							
+			</div>			
+		</div>
+	</section>
+	{% endblock %}
