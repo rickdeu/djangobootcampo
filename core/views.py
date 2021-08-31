@@ -13,7 +13,7 @@ def index(request):
 
     form = PerdidoForm()
     if request.method == 'POST':
-        form = PerdidoForm(request.POST)
+        form = PerdidoForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('index')

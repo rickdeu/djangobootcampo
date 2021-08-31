@@ -21,11 +21,11 @@ class Perdidos(models.Model):
     tipo_item = models.ForeignKey(Categoria, on_delete = models.CASCADE, related_name = "tipo_perdido", verbose_name ="Categoria")
     numero = models.CharField(max_length=30, verbose_name ="Numero")
     bairro = models.CharField(max_length=30, verbose_name ="Bairro")
-    declarante = models.CharField(max_length=30, verbose_name ="Declarante")
+    declarante = models.CharField(max_length=30, verbose_name ="Declarante", blank=False, null=False)
     data_perdido = models.DateTimeField(verbose_name="Data")
     date_registo = models.DateTimeField(auto_now_add=True)
     photo1 = models.ImageField(upload_to = "itens_perdidos")
-    descricao = models.TextField(max_length = 250, verbose_name = "Descricao")
+    descricao = models.TextField(max_length = 250, verbose_name = "Descricao", blank=False, null=False)
     resolvido = models.BooleanField(default = False, verbose_name = "Marcar como resolvido")
 
     def __str__(self):
